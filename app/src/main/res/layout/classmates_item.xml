@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".ClassmatesActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp">
+
+            <TextView
+                android:id="@+id/cm_username"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/cm_profile"
+                android:fontFamily="@font/robotomedium"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cm_school"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@id/cm_profile" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cm_profile"
+                android:layout_width="50dp"
+                android:layout_height="50sp"
+                android:layout_margin="5dp"
+                android:src="@drawable/avatar"
+                app:civ_border_color="@color/background"
+                app:civ_border_width="0.9dp" />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

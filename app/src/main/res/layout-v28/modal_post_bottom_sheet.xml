@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2C001B6A"
+    android:id="@+id/modalBottomSheetContainer3"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/modal_nav"
+                    android:background="@color/background">
+                    <LinearLayout
+                        android:id="@+id/LL2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/prof_picModal"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:civ_border_color="@color/black"
+                                app:civ_border_width="0dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="Name"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/schoolModal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="School" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/btnCancel"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ic_cancel"/>
+                </com.google.android.material.appbar.MaterialToolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="45sp"
+                android:layout_gravity="start"
+                android:layout_margin="5dp"
+                android:backgroundTint="#9FF44336"
+                android:text="add image"
+                app:cornerRadius="22.5dp"
+                app:icon="@drawable/ic_add_photo" />
+
+            <ImageView
+                android:id="@+id/ivImage_post"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/post_caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="What's on your mind..."
+                        android:maxLength="100" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="horizontal">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_postModal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="POST"
+        app:cornerRadius="22.5dp"
+        app:icon="@drawable/ic_send"
+        app:iconGravity="textEnd" />
+<com.google.android.material.progressindicator.CircularProgressIndicator
+    android:layout_width="45sp"
+    android:layout_height="45sp"
+    android:indeterminate="true"
+    android:id="@+id/postingProgress"
+    android:visibility="gone"
+    app:indicatorColor="@color/market"/>
+</LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:id="@+id/swipeDL">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_acc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/Rel_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/toolbarAcc"
+            android:background="@drawable/background_gradient" />
+
+
+        <RelativeLayout
+            android:id="@+id/LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:rotation="0"
+                android:rotationY="0"
+                android:src="@drawable/avatar"
+                app:civ_border_color="@color/teal_700"
+                app:civ_border_width="2dp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarAcc"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/white"
+            app:menu="@menu/menu_main"
+            app:subtitle="Profile"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/toolbarAcc"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/LL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LL"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="#02671F"
+                android:textSize="25sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_update_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="234dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="Update profile"
+            android:src="@drawable/ic_account"
+            tools:ignore="RelativeOverlap" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressAcc"
+            app:indicatorColor="@color/teal_700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_marginTop="220sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LL2"
+            android:background="@color/background"
+            app:tabSelectedTextColor="#02671F"
+            app:tabTextColor="@color/black"
+            app:tabIndicatorColor="@color/teal_700"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_below="@+id/tabLayout"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="8dp" />
+    </RelativeLayout>
+
+</ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

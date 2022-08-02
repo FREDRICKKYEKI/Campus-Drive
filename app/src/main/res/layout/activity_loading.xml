@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isaaco.campusdrive.LoadingActivity"
+    android:background="#FB6B3D">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@id/tv_campusDrive"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/stripedcampus"
+        android:text="WELCOME TO"
+        android:id="@+id/tv_campusDrive2"
+        android:textColor="#000000"
+        android:textSize="45sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@id/introLogo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/stripedcampus"
+        android:text="CAMPUS DRIVE"
+        android:id="@+id/tv_campusDrive"
+        android:textColor="#000000"
+        android:textSize="45sp" />
+
+    <ImageView
+        android:id="@+id/introLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/graduate_cap" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="290dp"
+        android:layout_below="@id/introLogo"
+        android:layout_centerHorizontal="true"
+        app:indicatorColor="@color/black"
+        android:layout_height="270dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/black" />
+
+    <TextView
+        style=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="by IsaaCoᵀᴹ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/border">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="You are offline!!!"
+        android:id="@+id/tv_internet"
+        android:fontFamily="@font/robotoblack"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/iv_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/tv_internet"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/icon_no_internet_connection" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_internet"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Some features of Campus Drive may not work properly."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+</RelativeLayout>

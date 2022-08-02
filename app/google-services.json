@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705096811689",
+    "project_id": "campus-drive-b2ea0",
+    "storage_bucket": "campus-drive-b2ea0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705096811689:android:daaed352479e9be72095b8",
+        "android_client_info": {
+          "package_name": "com.isaaco.campusdrive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705096811689-n50m7m87scto4gsfmspgnt1smnh9mo2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgzxgsMqQpX5_RiLBfvBsEngnbkT4GMco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705096811689-n50m7m87scto4gsfmspgnt1smnh9mo2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

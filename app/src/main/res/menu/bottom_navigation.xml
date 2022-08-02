@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_camp_meet"
+        android:icon="@drawable/ic_explore"
+        android:enabled="true"
+        android:title="Camp Meet" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_account"
+        android:enabled="true"
+        android:title="Profile" />
+</menu>

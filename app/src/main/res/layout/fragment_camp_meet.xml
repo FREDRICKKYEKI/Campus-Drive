@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isaaco.campusdrive.CampMeetFragment"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarCM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dp"
+                android:layout_margin="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="start"
+                android:layout_marginEnd="15dp"
+                android:rotation="0"
+                android:rotationY="0"
+                android:src="@drawable/avatar"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="0.7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotobold"
+                android:text="Campus Meet"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+<com.google.android.material.progressindicator.LinearProgressIndicator
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressCM"
+    app:indicatorColor="#FF5722"
+    android:indeterminate="true"
+    android:visibility="gone"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <include layout="@layout/ads_view" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/post_recyc_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp" />
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="37dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_post_add" />
+</RelativeLayout>

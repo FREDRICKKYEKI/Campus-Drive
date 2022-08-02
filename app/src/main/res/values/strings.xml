@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Campus Drive</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="schools">
+        <item>University of Nairobi</item>
+        <item>Kenyatta University</item>
+        <item>JKUAT</item>
+        <item>Technical University of Kenya</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="internet_check">You are offline. Some features might not work properly.</string>
+</resources>

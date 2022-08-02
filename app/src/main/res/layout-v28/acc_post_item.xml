@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@android:color/darker_gray"/>-->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+<LinearLayout
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/acc_profile_image"
+                android:layout_margin="1dp"
+                android:layout_width="55dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="55dp"
+                android:rotation="0"
+                android:rotationY="0"
+                app:civ_border_width="0.5dp"
+                app:civ_border_color="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_acc_user_name"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_acc_school"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/btn_delete"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:iconTint="@color/black"
+           android:background="@drawable/ic_delete">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/acc_mediaPost"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#25000000"
+            android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp">
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/tv_acc_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Timestamp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/acc_caption_post"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:hint="Post"/>
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

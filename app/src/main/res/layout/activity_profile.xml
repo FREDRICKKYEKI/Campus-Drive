@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/modalBottomSheetContainer"
+    android:background="@color/white"
+    tools:context="com.isaaco.campusdrive.ProfileActivity">
+    <!--    android:background="#2C001B6A"-->
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/profileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="Edit Profile">
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/progressCircular"
+            android:visibility="gone"
+            android:indeterminate="true"
+            app:indicatorColor="@color/gray"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="end"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+</com.google.android.material.appbar.AppBarLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:rotation="0"
+            android:rotationY="0"
+            android:src="@drawable/avatar"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="0.5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="User Name">
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSchool"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="School:"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="school"-->
+<!--            android:id="@+id/tvschool"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:maxLines="1"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="20sp"/>-->
+        <Spinner
+            android:layout_marginStart="5dp"
+            android:id="@+id/spinSchools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Course">
+        <EditText
+            android:id="@+id/etCourse"
+            android:layout_width="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:inputType="text"
+            android:layout_gravity="center"
+           />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/updatebtn"
+    android:layout_width="150dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginEnd="15dp"
+    android:backgroundTint="@color/teal_700"
+    app:cornerRadius="22.5dp"
+    android:text="Update"
+    android:layout_marginBottom="6dp"/>
+</LinearLayout>
+
+</LinearLayout>
